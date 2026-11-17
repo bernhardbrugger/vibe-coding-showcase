@@ -1,0 +1,19 @@
+name: Links
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: '23 6 * * 1' # weekly: projects link to other repositories
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config .lychee.toml --no-progress './**/*.md'
+          fail: true

@@ -1,0 +1,7 @@
+# Link checker (https://lychee.cli.rs): every markdown file, on each push, pull request and weekly.
+max_retries = 2
+timeout = 30
+max_concurrency = 8
+user_agent = "Mozilla/5.0 (compatible; vibe-coding-showcase link check)"
+# 429 means rate limited, the page exists
+accept = ["200..=299", "429"]
