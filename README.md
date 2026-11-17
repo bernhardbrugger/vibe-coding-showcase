@@ -1,8 +1,14 @@
 # Vibe coding, run as a system
 
+[![Links](https://github.com/bernhardbrugger/vibe-coding-showcase/actions/workflows/links.yml/badge.svg)](https://github.com/bernhardbrugger/vibe-coding-showcase/actions/workflows/links.yml)
+
 > One person, an AI coding agent and a control repository that runs a portfolio of repositories end to end: it triages, fixes, tests, releases, researches new ideas and reports back. This repository documents how that works, what stops it from doing damage, and what it has really produced.
 
 **Status: private draft.** Every number in [METRICS.md](METRICS.md) is generated from GitHub and the agent's own run log, never typed by hand. Nothing here is padded: the rules forbid it, and [the guardrails](docs/GUARDRAILS.md) explain why that matters more than a pretty contribution graph.
+
+## Why this exists
+
+AI coding agents make it easy to produce a lot of code and just as easy to produce a lot of mess. What decides whether the result is worth anything is the system around the agent: what it may do, how its work is checked, who decides what, and whether the numbers it reports are true. This repository is the working answer to that question, kept honest by the same rules it describes.
 
 ## At a glance
 
@@ -65,12 +71,16 @@ flowchart LR
 - [Metrics](METRICS.md): generated numbers
 - [Reproduce it](docs/REPRODUCE.md): the minimum you need to run the same setup
 
-## Honest limits
+## Limitations (honest)
 
 - It is one person's setup on one machine: scheduled runs need the desktop app to be open, and usage limits cap how much work happens.
 - An agent can be confidently wrong. The system limits the damage (checks, CI, an inbox for decisions) rather than pretending otherwise; see the case studies.
 - Contribution counts depend on what GitHub shows: private repositories only count when the profile setting for private contributions is on.
 - This is a draft until the owner has read it. It becomes public only through an explicit approval.
+
+## Not advice
+
+Some of the projects mentioned work with market data. This is not investment advice, and neither are the projects: they describe and measure, they do not recommend or trade.
 
 ## Licence
 
