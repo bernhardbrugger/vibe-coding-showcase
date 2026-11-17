@@ -4,7 +4,7 @@ You do not need this repository's code to copy the idea; there is almost none. Y
 
 1. **A control repository** (private) with: an operating manual, a strategy file, one playbook per kind of run, a state folder (run log, portfolio file, backlog, queue) and an inbox file.
 2. **Scripts** that make everything deterministic: a snapshot of metrics (via the GitHub CLI), a lock, a secret scan, a work-queue builder, a contribution counter. Plain Node, no dependencies.
-3. **A scheduler** for the agent: five runs a day, scouting twice a week, a weekly review.
+3. **A scheduler** for the agent: several runs a day, scouting twice a week, a weekly review.
 4. **Rules first.** Write the hard rules before the first run: scope, no deletion, no contact with strangers, no secrets, private first, the human decides what is theirs. Add standing approvals only for decisions you would approve every time.
 5. **Measure** with a script, and read what it says about its own blind spots.
 

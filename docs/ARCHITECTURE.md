@@ -16,13 +16,15 @@ The whole system is a **control repository** plus the repositories it looks afte
 
 ## Run types
 
+<!-- gen:runs -->
 | Run | When | Purpose |
 |---|---|---|
 | Daily | 09:03 | Health first: CI, security alerts, broken install paths, new issues and pull requests; then the highest-value work |
 | Work | 12:37, 15:37, 18:37, 21:37 | Turn the ranked queue into verified commits until a stop condition |
-| Maintenance | Tuesday and Friday | Deep health check of the public flagship, including a live canary against the real interface it wraps |
-| Scout | Monday and Thursday | Research new ideas from several signal sources, score them with the rubric, start the best as a **private** project while a slot is free |
-| Review | Sunday | Critical review of every repository, tiers, proposals to archive, a weekly report in the owner's language |
+| Maintenance | Tuesday and Friday 07:30 | Deep health check of the public flagship, including a live canary against the real interface it wraps |
+| Scout | Monday and Thursday 07:30 | Research new ideas from several signal sources, score them with the rubric, start the best as a **private** project while a slot is free |
+| Review | Sunday 18:00 | Critical review of every repository, tiers, proposals to archive, a weekly report in the owner's language |
+<!-- /gen:runs -->
 
 Runs never overlap: a lock file is taken first; a run that finds it busy logs "skipped" and stops.
 
