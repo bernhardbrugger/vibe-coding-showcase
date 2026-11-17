@@ -1,6 +1,6 @@
 # Projects
 
-Generated 2026-11-17 from the portfolio file and GitHub. Public repositories by name; private projects under care are only counted (4 now, in tiers incubating).
+Generated 2026-11-17 from the portfolio file and GitHub. Public repositories by name; private projects under care are only counted (4 now, in tiers incubating, maintenance).
 
 | Project | Tier | What it is | Commits (30 d) | Latest release |
 |---|---|---|---|---|

@@ -4,9 +4,9 @@ Generated 2026-11-17 by `scripts/showcase-metrics.mjs` from GitHub and the autop
 
 ## Activity, last 30 days
 
-`·······▂·█▇▂··▂▅▂▃▄·▂·▅█▅▄▄▃▆▂`
+`·······▂·█▇▂··▂▅▂▃▄·▂·▅█▅▄▄▃▆▃`
 
-**164** contributions on **18** of 30 days (commits, pull requests, issues and reviews; private contributions only when the profile shows them).
+**170** contributions on **18** of 30 days (commits, pull requests, issues and reviews; private contributions only when the profile shows them).
 
 ## Repositories
 
@@ -34,16 +34,16 @@ Generated 2026-11-17 by `scripts/showcase-metrics.mjs` from GitHub and the autop
 
 ## The autopilot itself
 
-Run-log entries in the last 30 days: 128.
+Run-log entries in the last 30 days: 130.
 
 | Kind of run | Entries |
 |---|---|
-| interactive with the owner | 53 |
+| interactive with the owner | 54 |
 | other | 47 |
 | work | 16 |
-| maintain | 8 |
+| maintain | 9 |
 | scout | 2 |
 | review | 1 |
 | daily | 1 |
 
-Human-in-the-loop: 22 decisions closed, 31 waiting (every decision the agent may not take alone goes through an inbox the owner answers by ticking or replying).
+Human-in-the-loop: 23 decisions closed, 30 waiting (every decision the agent may not take alone goes through an inbox the owner answers by ticking or replying).

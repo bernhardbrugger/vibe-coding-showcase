@@ -4,7 +4,7 @@
 
 > One person, an AI coding agent and a control repository that runs a portfolio of repositories end to end: it triages, fixes, tests, releases, researches new ideas and reports back. This repository documents how that works, what stops it from doing damage, and what it has really produced.
 
-**Status: private draft.** Every number in [METRICS.md](METRICS.md) is generated from GitHub and the agent's own run log, never typed by hand. Nothing here is padded: the rules forbid it, and [the guardrails](docs/GUARDRAILS.md) explain why that matters more than a pretty contribution graph.
+**Status: living document.** The numbers, the project list and the run schedule are generated, so they match what runs today; the prose is updated at real milestones. Every number in [METRICS.md](METRICS.md) is generated from GitHub and the agent's own run log, never typed by hand. Nothing here is padded: the rules forbid it, and [the guardrails](docs/GUARDRAILS.md) explain why that matters more than a pretty contribution graph.
 
 ## Why this exists
 
@@ -76,7 +76,7 @@ flowchart LR
 - It is one person's setup on one machine: scheduled runs need the desktop app to be open, and usage limits cap how much work happens.
 - An agent can be confidently wrong. The system limits the damage (checks, CI, an inbox for decisions) rather than pretending otherwise; see the case studies.
 - Contribution counts depend on what GitHub shows: private repositories only count when the profile setting for private contributions is on.
-- This is a draft until the owner has read it. It becomes public only through an explicit approval.
+- It is written for readers, not for search engines: where something is not true yet, the text says so instead of rounding up.
 
 ## Not advice
 
