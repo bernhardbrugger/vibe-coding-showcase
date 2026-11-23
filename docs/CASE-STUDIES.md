@@ -35,6 +35,21 @@ Each one says what was built, how the agent worked, and where it was wrong. The 
 - *A Bayesian A/B testing package* promised an interval type it did not implement; the promise was kept by writing it. A stopping rule on expected loss was added with a simulation that peeks after every batch, to check the claim that makes the rule useful.
 - *A data-format skill* advertised XML it never supported, and silently read an unknown file type as CSV (producing an empty result). It now refuses with a message, the format table is verified cell by cell by tests, and the description says what is true.
 
+## 5. Three red nights in a row (what-reddit-is-buying)
+
+**What.** A scheduled GitHub Actions job that searches forum threads every weekday, has a language model summarise what people say they are buying, and publishes a daily board. It deliberately keeps the old board when the search comes back without forum text, rather than publishing a summary of nothing.
+
+**How the agent worked.** Every daily run treats a red scheduled run as the first item of the day. It reads the failed log, decides whether the cause is in the code or outside it, and does not start a manual re-run just to see green, because each run spends paid search quota. The next scheduled run is the proof.
+
+**What happened, night by night**
+
+- *17 Nov, red.* The forum search returned 0 results for all three queries; the job stopped on purpose and kept the old board. Diagnosis: an outage outside the code, nothing to fix yet. Note for the next day: a second red night means look at the query and the engine.
+- *18 Nov, cancelled.* A second failure, with a different cause, this time in the code. The search worked partly; then the call to one of the three model providers hung for eight minutes until the job's ten-minute limit killed it. That adapter was the only one without a request timeout, so neither the retry nor the fallback model ever ran. Fix: one shared 180-second timeout for every provider ([`8a1fa69`](https://github.com/bernhardbrugger/what-reddit-is-buying/commit/8a1fa69)), shown against a local server that accepts connections and never answers (the old code was still hanging after 20 s, the new one raised a timeout after 2.5 s) and pinned by a test that fails without the fix. The job limit was raised to fit the retries ([`eb33660`](https://github.com/bernhardbrugger/what-reddit-is-buying/commit/eb33660)).
+- *19 Nov, red.* The forum engine was completely empty again, and the existing retry used the same engine, so it was empty too. Fix: an empty forum search is now repeated once on the regular search engine with the same query ([`da23712`](https://github.com/bernhardbrugger/what-reddit-is-buying/commit/da23712)), with a test that fails on the old code. It could not be proven locally, because the search key lives only in the repository's secrets.
+- *20 Nov, green.* The scheduled run succeeded and the board was updated ([`18be376`](https://github.com/bernhardbrugger/what-reddit-is-buying/commit/18be376)). The forum engine was still empty that night; the fallback carried the run.
+
+**Where it was wrong, and how it was caught.** The README promised a board before the US market opens, because the cron line says 13:30 UTC. Checked against the run history, the scheduled runs had actually started between 20:35 and 22:58 UTC, after the close. The claim was withdrawn ([`4821586`](https://github.com/bernhardbrugger/what-reddit-is-buying/commit/4821586)), and "check freshness claims against the run history, never against the cron line" became a written lesson. The week was also a reminder that the same symptom can have a different cause each night: the second and third failures were diagnosed from their own logs, not assumed to be the first one again.
+
 ## What these have in common
 
 The agent is fast, and also confidently wrong now and then. What made the difference was a loop that does not trust it: run the thing, read the real output, make the test able to fail, check CI, and let a human decide what is theirs.
