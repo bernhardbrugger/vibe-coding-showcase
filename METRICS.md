@@ -1,12 +1,12 @@
 # Metrics
 
-Generated 2026-11-23 by `scripts/showcase-metrics.mjs` from GitHub and the autopilot's own log. Real numbers only; private repositories appear as a count.
+Generated 2026-11-24 by `scripts/showcase-metrics.mjs` from GitHub and the autopilot's own log. Real numbers only; private repositories appear as a count.
 
 ## Activity, last 30 days
 
-`·▂·█▇▂··▂▅▂▃▄·▂·▅█▅▄▄▃▆▆▆▆▅▂·▂`
+`▂·█▇▂··▂▅▂▃▄·▂·▅█▅▄▄▃▆▆▆▆▅▂·▅·`
 
-**226** contributions on **23** of 30 days (commits, pull requests, issues and reviews; private contributions only when the profile shows them).
+**237** contributions on **23** of 30 days (commits, pull requests, issues and reviews; private contributions only when the profile shows them).
 
 ## Repositories
 
@@ -14,18 +14,18 @@ Generated 2026-11-23 by `scripts/showcase-metrics.mjs` from GitHub and the autop
 
 | Repository | Tier | Stars | Commits (30 d) | CI |
 |---|---|---|---|---|
-| [capitol-street-bets](https://github.com/bernhardbrugger/capitol-street-bets) | maintenance | 0 | 41 | passing |
+| [capitol-street-bets](https://github.com/bernhardbrugger/capitol-street-bets) | maintenance | 0 | 42 | passing |
 | [parlament-at-mcp](https://github.com/bernhardbrugger/parlament-at-mcp) | flagship | 0 | 40 | passing |
-| [what-reddit-is-buying](https://github.com/bernhardbrugger/what-reddit-is-buying) | maintenance | 0 | 32 | passing |
-| [agora](https://github.com/bernhardbrugger/agora) | active | 0 | 29 | passing |
+| [agora](https://github.com/bernhardbrugger/agora) | active | 0 | 39 | passing |
+| [what-reddit-is-buying](https://github.com/bernhardbrugger/what-reddit-is-buying) | maintenance | 0 | 33 | passing |
 | [claude-skill-data-transform](https://github.com/bernhardbrugger/claude-skill-data-transform) | active | 1 | 18 | passing |
 | [logo-to-svg](https://github.com/bernhardbrugger/logo-to-svg) | active | 0 | 16 | passing |
 | [shardkey](https://github.com/bernhardbrugger/shardkey) | maintenance | 0 | 15 | passing |
 | [welche-kalenderwoche-ist-heute](https://github.com/bernhardbrugger/welche-kalenderwoche-ist-heute) | maintenance | 0 | 14 | passing |
-| [awesome-ai-trading](https://github.com/bernhardbrugger/awesome-ai-trading) | maintenance | 1 | 14 | passing |
+| [awesome-ai-trading](https://github.com/bernhardbrugger/awesome-ai-trading) | maintenance | 2 | 14 | passing |
 | [stock-forensics](https://github.com/bernhardbrugger/stock-forensics) | maintenance | 0 | 13 | passing |
-| [bayesian-ab-testing](https://github.com/bernhardbrugger/bayesian-ab-testing) | active | 0 | 11 | passing |
-| [vibe-coding-showcase](https://github.com/bernhardbrugger/vibe-coding-showcase) | maintenance | 0 | 10 | passing |
+| [vibe-coding-showcase](https://github.com/bernhardbrugger/vibe-coding-showcase) | active | 0 | 12 | passing |
+| [bayesian-ab-testing](https://github.com/bernhardbrugger/bayesian-ab-testing) | maintenance | 0 | 11 | passing |
 | [qr-beam](https://github.com/bernhardbrugger/qr-beam) | maintenance | 0 | 9 | passing |
 | [swarm](https://github.com/bernhardbrugger/swarm) | maintenance | 0 | 3 | no run of its own yet |
 | [awesome-self-hosted-ai-solopreneurs](https://github.com/bernhardbrugger/awesome-self-hosted-ai-solopreneurs) | maintenance | 0 | 2 | passing |
@@ -35,16 +35,16 @@ Generated 2026-11-23 by `scripts/showcase-metrics.mjs` from GitHub and the autop
 
 ## The autopilot itself
 
-Run-log entries in the last 30 days: 156.
+Run-log entries in the last 30 days: 166.
 
 | Kind of run | Entries |
 |---|---|
-| interactive with the owner | 56 |
+| interactive with the owner | 57 |
 | other | 47 |
-| work | 33 |
-| maintain | 10 |
-| daily | 6 |
-| scout | 3 |
+| work | 37 |
+| maintain | 11 |
+| daily | 9 |
+| scout | 4 |
 | review | 1 |
 
-Human-in-the-loop: 24 decisions closed, 36 waiting (every decision the agent may not take alone goes through an inbox the owner answers by ticking or replying).
+Human-in-the-loop: 24 decisions closed, 43 waiting (every decision the agent may not take alone goes through an inbox the owner answers by ticking or replying).
