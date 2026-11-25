@@ -1,16 +1,16 @@
 # Projects
 
-Generated 2026-11-24 from the portfolio file and GitHub. Public repositories by name; private projects under care are only counted (2 now, in tiers incubating).
+Generated 2026-11-25 from the portfolio file and GitHub. Public repositories by name; private projects under care are only counted (2 now, in tiers incubating).
 
 | Project | Tier | What it is | Commits (30 d) | Latest release |
 |---|---|---|---|---|
 | [parlament-at-mcp](https://github.com/bernhardbrugger/parlament-at-mcp) | flagship | MCP server for the Austrian Parliament (Nationalrat, Bundesrat): members, inquiries, protocols, legislative items | 40 | v0.5.1 (2026-10-29) |
-| [agora](https://github.com/bernhardbrugger/agora) | active | CLI framework for multi-agent debates powered by Claude | 39 | - |
+| [agora](https://github.com/bernhardbrugger/agora) | active | CLI framework for multi-agent debates powered by Claude | 44 | - |
 | [claude-skill-data-transform](https://github.com/bernhardbrugger/claude-skill-data-transform) | active | Universal data format converter for Claude Code — CSV, JSON, SQL, YAML, Markdown, TOML, NDJSON. Zero external dependencies. | 18 | - |
 | [logo-to-svg](https://github.com/bernhardbrugger/logo-to-svg) | active | Turn blurry raster logos into clean, scalable SVGs - CLI, Python library and Claude skill. Traces the graphic with potrace, re-sets text as  | 16 | v0.2.0 (2026-10-28) |
-| [vibe-coding-showcase](https://github.com/bernhardbrugger/vibe-coding-showcase) | active | How I run a portfolio of repos with an autonomous AI maintainer: workflows, guardrails and real metrics | 12 | - |
-| [capitol-street-bets](https://github.com/bernhardbrugger/capitol-street-bets) | maintenance | (no description yet) | 42 | - |
-| [what-reddit-is-buying](https://github.com/bernhardbrugger/what-reddit-is-buying) | maintenance | The stocks retail is piling into, ranked every trading day. Mood-scored, rank moves, any model you choose. | 33 | - |
+| [vibe-coding-showcase](https://github.com/bernhardbrugger/vibe-coding-showcase) | active | How I run a portfolio of repos with an autonomous AI maintainer: workflows, guardrails and real metrics | 13 | - |
+| [capitol-street-bets](https://github.com/bernhardbrugger/capitol-street-bets) | maintenance | (no description yet) | 43 | - |
+| [what-reddit-is-buying](https://github.com/bernhardbrugger/what-reddit-is-buying) | maintenance | The stocks retail is piling into, ranked every trading day. Mood-scored, rank moves, any model you choose. | 34 | - |
 | [shardkey](https://github.com/bernhardbrugger/shardkey) | maintenance | Split a secret into QR codes. Any k of n bring it back. One offline HTML file. | 15 | - |
 | [awesome-ai-trading](https://github.com/bernhardbrugger/awesome-ai-trading) | maintenance | Curated list of AI/ML tools for algorithmic trading and quant finance: LLM agents, MCP servers, backtesting, forecasting models, data (incl. | 14 | - |
 | [welche-kalenderwoche-ist-heute](https://github.com/bernhardbrugger/welche-kalenderwoche-ist-heute) | maintenance | Simple web app to display the current calendar week — clean, fast, and ad-free. 📅 | 14 | - |
