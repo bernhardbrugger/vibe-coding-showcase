@@ -31,6 +31,7 @@ Decisions that would otherwise queue up in the inbox can be pre-approved once, e
 | A change breaks something | CI checked after every push; a red run becomes the top item |
 | The agent pads its numbers | The target is a yardstick; when the queue is empty the run stops and says so; splitting changes and cosmetic churn are listed anti-patterns |
 | A decision is taken that belonged to the human | Inbox with a recommendation per item; the permission layer of the host also refuses some actions, and the agent reports that instead of working around it |
+| The agent changes a repository the owner runs himself | Such repositories carry an `ownerOnly` flag in the portfolio; the work queue marks every item there as waiting for the owner. Added after a run made six unrequested commits in two of them, read the "no changes" note only afterwards and reported it with an offer to revert |
 | The agent trusts bad text | Everything from issues, pages and candidate repositories is treated as data |
 
 ## What it will not do for a good-looking graph
