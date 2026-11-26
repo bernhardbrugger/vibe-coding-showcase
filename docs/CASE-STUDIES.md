@@ -50,6 +50,20 @@ Each one says what was built, how the agent worked, and where it was wrong. The 
 
 **Where it was wrong, and how it was caught.** The README promised a board before the US market opens, because the cron line says 13:30 UTC. Checked against the run history, the scheduled runs had actually started between 20:35 and 22:58 UTC, after the close. The claim was withdrawn ([`4821586`](https://github.com/bernhardbrugger/what-reddit-is-buying/commit/4821586)), and "check freshness claims against the run history, never against the cron line" became a written lesson. The week was also a reminder that the same symptom can have a different cause each night: the second and third failures were diagnosed from their own logs, not assumed to be the first one again.
 
+## 6. Names that rot while the tests stay green (agora, bayesian-ab-testing)
+
+**What.** Two Python projects with green CI: agora, a multi-agent debate tool with three language-model providers, and a Bayesian A/B testing package. Both passed every test, and both handed users a command or a default that did not work.
+
+**How the agent worked.** Repositories that nobody has touched for a while get an end-to-end check in the work runs: a fresh virtual environment, a git install as a stranger would do it, every README example run and compared with the printed output, then every message the program shows a user read for the names it points at.
+
+**What it found**
+
+- *A hint that installed someone else's package.* Without matplotlib, the A/B package told users to run `pip install bayesian-ab-testing[plot]`. That name on PyPI belongs to an unrelated project by other authors, so following the hint would have installed foreign code. The hint now names matplotlib ([`e3a4973`](https://github.com/bernhardbrugger/bayesian-ab-testing/commit/e3a4973)); a test hides matplotlib and fails on the old text.
+- *The same mistake, one repository over.* A search for the pattern across all Python repositories found agora telling users to `pip install "agora-debate[mcp]"`, a name that is not registered at all: the command fails today, and anyone could register the name and receive those installs. The hints now name the real dependency ([`b1231c6`](https://github.com/bernhardbrugger/agora/commit/b1231c6)).
+- *A default that had been dead for five months.* agora's default model alias, written in February, pointed to a model the provider's deprecation page lists as retired in June 2026, so every real run without `--model` would have ended in a "not found" error. The other provider's default had been shut down two weeks before that. The provider tests use fake SDKs, so they could never notice. The aliases now point to current models read from the providers' own model and deprecation pages ([`bf744d1`](https://github.com/bernhardbrugger/agora/commit/bf744d1), [`2cf9fec`](https://github.com/bernhardbrugger/agora/commit/2cf9fec)), and the first test for that provider pins the mapping. They were not called live: no key is available to the agent, and the commits say so.
+
+**Where it was wrong, and how it was caught.** Both install hints came from the agent's own earlier commits: plausible names for packages that were never published, and tests that checked a hint appeared, not that it worked. Two written lessons came out of it: an install hint names only a package that really exists under our name (checked against the PyPI JSON API), and alias tables in language-model tools are checked against the providers' deprecation pages during maintenance, because fake-SDK tests stay green whatever the real API says.
+
 ## What these have in common
 
 The agent is fast, and also confidently wrong now and then. What made the difference was a loop that does not trust it: run the thing, read the real output, make the test able to fail, check CI, and let a human decide what is theirs.
