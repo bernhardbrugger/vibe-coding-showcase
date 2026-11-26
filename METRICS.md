@@ -1,12 +1,12 @@
 # Metrics
 
-Generated 2026-11-25 by `scripts/showcase-metrics.mjs` from GitHub and the autopilot's own log. Real numbers only; private repositories appear as a count.
+Generated 2026-11-26 by `scripts/showcase-metrics.mjs` from GitHub and the autopilot's own log. Real numbers only; private repositories appear as a count.
 
 ## Activity, last 30 days
 
-`·█▇▂··▂▅▂▃▄·▂·▅█▅▄▄▃▆▆▆▆▅▂·▅▃·`
+`█▇▂··▂▅▂▃▄·▂·▅█▅▄▄▃▆▆▆▆▅▂·▅▃▅·`
 
-**242** contributions on **23** of 30 days (commits, pull requests, issues and reviews; private contributions only when the profile shows them).
+**253** contributions on **24** of 30 days (commits, pull requests, issues and reviews; private contributions only when the profile shows them).
 
 ## Repositories
 
@@ -14,18 +14,18 @@ Generated 2026-11-25 by `scripts/showcase-metrics.mjs` from GitHub and the autop
 
 | Repository | Tier | Stars | Commits (30 d) | CI |
 |---|---|---|---|---|
-| [agora](https://github.com/bernhardbrugger/agora) | active | 0 | 44 | passing |
-| [capitol-street-bets](https://github.com/bernhardbrugger/capitol-street-bets) | maintenance | 0 | 43 | passing |
-| [parlament-at-mcp](https://github.com/bernhardbrugger/parlament-at-mcp) | flagship | 0 | 40 | passing |
-| [what-reddit-is-buying](https://github.com/bernhardbrugger/what-reddit-is-buying) | maintenance | 0 | 34 | passing |
+| [capitol-street-bets](https://github.com/bernhardbrugger/capitol-street-bets) | maintenance | 0 | 48 | passing |
+| [agora](https://github.com/bernhardbrugger/agora) | active | 0 | 45 | passing |
+| [parlament-at-mcp](https://github.com/bernhardbrugger/parlament-at-mcp) | flagship | 0 | 42 | passing |
+| [what-reddit-is-buying](https://github.com/bernhardbrugger/what-reddit-is-buying) | maintenance | 0 | 35 | passing |
 | [claude-skill-data-transform](https://github.com/bernhardbrugger/claude-skill-data-transform) | active | 1 | 18 | passing |
-| [logo-to-svg](https://github.com/bernhardbrugger/logo-to-svg) | active | 0 | 16 | passing |
+| [vibe-coding-showcase](https://github.com/bernhardbrugger/vibe-coding-showcase) | active | 0 | 15 | passing |
+| [stock-forensics](https://github.com/bernhardbrugger/stock-forensics) | maintenance | 0 | 15 | passing |
 | [shardkey](https://github.com/bernhardbrugger/shardkey) | maintenance | 0 | 15 | passing |
+| [logo-to-svg](https://github.com/bernhardbrugger/logo-to-svg) | active | 0 | 14 | passing |
 | [welche-kalenderwoche-ist-heute](https://github.com/bernhardbrugger/welche-kalenderwoche-ist-heute) | maintenance | 0 | 14 | passing |
 | [awesome-ai-trading](https://github.com/bernhardbrugger/awesome-ai-trading) | maintenance | 2 | 14 | passing |
-| [vibe-coding-showcase](https://github.com/bernhardbrugger/vibe-coding-showcase) | active | 0 | 13 | passing |
-| [stock-forensics](https://github.com/bernhardbrugger/stock-forensics) | maintenance | 0 | 13 | passing |
-| [bayesian-ab-testing](https://github.com/bernhardbrugger/bayesian-ab-testing) | maintenance | 0 | 11 | passing |
+| [bayesian-ab-testing](https://github.com/bernhardbrugger/bayesian-ab-testing) | maintenance | 0 | 12 | passing |
 | [qr-beam](https://github.com/bernhardbrugger/qr-beam) | maintenance | 0 | 9 | passing |
 | [swarm](https://github.com/bernhardbrugger/swarm) | maintenance | 0 | 3 | no run of its own yet |
 | [awesome-self-hosted-ai-solopreneurs](https://github.com/bernhardbrugger/awesome-self-hosted-ai-solopreneurs) | maintenance | 0 | 2 | passing |
@@ -35,16 +35,16 @@ Generated 2026-11-25 by `scripts/showcase-metrics.mjs` from GitHub and the autop
 
 ## The autopilot itself
 
-Run-log entries in the last 30 days: 171.
+Run-log entries in the last 30 days: 177.
 
 | Kind of run | Entries |
 |---|---|
 | interactive with the owner | 57 |
 | other | 47 |
-| work | 41 |
+| work | 45 |
 | maintain | 11 |
-| daily | 10 |
-| scout | 4 |
+| daily | 11 |
+| scout | 5 |
 | review | 1 |
 
-Human-in-the-loop: 24 decisions closed, 46 waiting (every decision the agent may not take alone goes through an inbox the owner answers by ticking or replying).
+Human-in-the-loop: 25 decisions closed, 49 waiting (every decision the agent may not take alone goes through an inbox the owner answers by ticking or replying).
