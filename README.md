@@ -15,7 +15,7 @@ AI coding agents make it easy to produce a lot of code and just as easy to produ
 Generated from the configuration and GitHub by `scripts/showcase-sync.mjs`, so it cannot drift from what actually runs.
 
 <!-- gen:glance -->
-- **18** public projects and **2** private ones under care, each in the same care checklist; the one untouched longest is served first
+- **19** public projects and **2** private ones under care, each in the same care checklist; the one untouched longest is served first
 - **5** scheduled runs a day (daily 09:03, work runs 12:37, 15:37, 18:37, 21:37); idea scouting Monday and Thursday 07:30
 - **4** standing approvals granted by the owner (dependabotMerge, listPrsByContributing, closeAds, mitLicenseOwnRepos); everything else waits in the inbox
 - New ideas start **private** (cap: 4 incubating projects) and become public only after the owner has looked at them
